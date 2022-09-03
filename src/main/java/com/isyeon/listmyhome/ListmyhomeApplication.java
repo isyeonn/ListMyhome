@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ListmyhomeApplication {
 
 	public static void main(String[] args) {
-		System.out.print("hi, 오랜만~");
-		System.out.print("test");
 		SpringApplication.run(ListmyhomeApplication.class, args);
 	}
 
