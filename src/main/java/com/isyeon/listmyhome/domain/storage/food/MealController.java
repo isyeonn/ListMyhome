@@ -24,20 +24,15 @@ public class MealController {
 	@Operation(summary = "현재 재고 모두 조회", description = "식사 관련 재료 모두 출력")
 	@GetMapping("/getMeals")
     public String get() {
-		
-		String answer = "";
-		System.out.println(">>>>>>>");
-		answer = "2323";
-        return answer;
+		return null;
     }
-	
-	@PostMapping("/post")
-	public String PostTest(@RequestBody String msg) {
-		System.out.println(">>>>>>>");
-	    return "post success!!!"+msg;
-	}
+
 
 	//현재 재고 타입별 조회
+	@PostMapping("/post")
+	public String PostTest(@RequestBody String msg) {
+		return null;
+	}
 
 	//신규 등록
 

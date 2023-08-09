@@ -1,5 +1,6 @@
 package com.isyeon.listmyhome.domain.storage.cloth;
 
+import com.isyeon.listmyhome.common.SEASON;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,12 +20,18 @@ public class ClothController {
     //옷장 전체 아이템 조회
     @Operation(summary = "현재 옷장 내역 조회", description = "현재 옷장에 있는 옷들 모두 출력")
     @Parameter(name = "str", description = "옷옷옷")
-    @GetMapping("/getClothes")
-    public String getCLothes(@RequestParam String str) {
-        return str + "\n" + str;
+    @GetMapping("/all")
+    public String getCloth(@RequestParam String str) {
+        return null;
     }
 
     //옷장 현재 계절 조회
+    @Operation(summary = "현재 옷장 내역 조회", description = "현재 옷장에 있는 옷들 모두 출력")
+    @Parameter(name = "str", description = "옷옷옷")
+    @GetMapping("/season")
+    public String getCloth(@RequestParam SEASON season) {
+        return null;
+    }
 
     //옷장 새로운 옷 등록
 
