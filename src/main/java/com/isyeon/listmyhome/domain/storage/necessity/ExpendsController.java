@@ -1,6 +1,5 @@
 package com.isyeon.listmyhome.domain.storage.necessity;
 
-import com.isyeon.listmyhome.common.DrinkType;
 import com.isyeon.listmyhome.common.ExpandType;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.GetMapping;
