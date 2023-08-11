@@ -26,7 +26,6 @@ public class Users extends BaseTime {
 
     @ManyToOne
     @JoinColumn(name = "family_id")
-    @Column(length = 10)
     private Family family; //가족정보
 
     @Column(length = 1, nullable = false)

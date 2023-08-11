@@ -1,7 +1,6 @@
 package com.isyeon.listmyhome.domain.storage.cloth.dto;
 
 import com.isyeon.listmyhome.common.SEASON;
-import com.isyeon.listmyhome.domain.storage.cloth.entity.Cloth;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -26,26 +25,5 @@ public class ClothRequestDto {
 
     private int amt = 1;
 
-    public Cloth toEntity() {
-        return Cloth.builder()
-                .name(name)
-                .season(season)
-                .color(color)
-                .exist(exist)
-                .type(type)
-                .amt(amt)
-                .build();
-    }
-
-    public ClothRequestDto toDto(Cloth cloth) {
-        return new ClothRequestDto(
-                cloth.getName(),
-                cloth.getSeason(),
-                cloth.getColor(),
-                cloth.isExist(),
-                cloth.getType(),
-                cloth.getAmt()
-        );
-    }
 
 }

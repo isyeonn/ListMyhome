@@ -34,7 +34,7 @@ public class SnackService {
     snack_type으로 조회
      */
      public List<FindSnackResponse> findAllSnack(SnackType snackType) {
-         List<Snack> snackList = snackRepository.findBySnack_type(snackType);
+         List<Snack> snackList = snackRepository.findBySnackType(snackType);
          List<FindSnackResponse> responseList =
                  snackList.stream().map(p -> modelMapper.map(p, FindSnackResponse.class))
                          .collect(Collectors.toList());

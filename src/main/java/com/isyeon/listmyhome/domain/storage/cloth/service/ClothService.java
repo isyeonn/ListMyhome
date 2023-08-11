@@ -33,7 +33,7 @@ public class ClothService {
     //옷장 현재 계절 조회
     @Transactional(readOnly = true)
     public List<FindClothResponse> findSeosonCloth(SEASON season) {
-        List<Cloth> clothes = clothRepository.findBySeoson(season);
+        List<Cloth> clothes = clothRepository.findBySeason(season);
         List<FindClothResponse> responseList =
                 clothes.stream().map(p -> modelMapper.map(p, FindClothResponse.class))
                         .collect(Collectors.toList());

@@ -34,7 +34,7 @@ public class MealService {
     meal_type으로 조회
      */
     public List<FindMealResponse> findAllMeal(MealType mealType){
-        List<Meal> mealList = mealRepository.findByMeal_type(mealType);
+        List<Meal> mealList = mealRepository.findByMealType(mealType);
         List<FindMealResponse> responseList =
                 mealList.stream().map(p -> modelMapper.map(p, FindMealResponse.class))
                         .collect(Collectors.toList());

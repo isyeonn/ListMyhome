@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface SnackRepository extends JpaRepository<Snack, Long> {
 
-    public List<Snack> findBySnack_type(SnackType snackType);
+    public List<Snack> findBySnackType(SnackType snackType);
 }

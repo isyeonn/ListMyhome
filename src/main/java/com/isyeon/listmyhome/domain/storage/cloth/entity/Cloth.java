@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Getter
 @Entity
+@Getter
 @NoArgsConstructor
 @Table(name = "cloth")
 public class Cloth extends BaseTime {
@@ -33,16 +33,5 @@ public class Cloth extends BaseTime {
     private String type;
 
     private int amt = 1;
-
-    @Builder
-    public Cloth(String name, SEASON season, String color,
-                        boolean exist, String type, int amt) {
-        this.name = name;
-        this.season = season;
-        this.color = color;
-        this.exist = exist;
-        this.type = type;
-        this.amt = amt;
-    }
 
 }

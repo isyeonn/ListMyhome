@@ -14,10 +14,10 @@ public class Family extends BaseTime {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "family_id")
     private Long id;  //PK
 
-    private String familyId; //기족 아이디
+    @Column(length = 20)
+    private String name; //이름
 
     private char useFlag; //사용여부
 }

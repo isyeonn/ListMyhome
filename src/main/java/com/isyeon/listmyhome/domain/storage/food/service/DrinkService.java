@@ -34,7 +34,7 @@ public class DrinkService {
     drink_type으로 조회
      */
     public List<FindDrinkResponse> findAllDrink(DrinkType drinkType){
-        List<Drink> drinkList = drinkRepository.findByDrink_type(drinkType);
+        List<Drink> drinkList = drinkRepository.findByDrinkType(drinkType);
         List<FindDrinkResponse> responseList =
                 drinkList.stream().map(p -> modelMapper.map(p, FindDrinkResponse.class))
                         .collect(Collectors.toList());

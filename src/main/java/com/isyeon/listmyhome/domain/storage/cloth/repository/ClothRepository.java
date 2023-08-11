@@ -8,5 +8,5 @@ import java.util.List;
 
 public interface ClothRepository extends JpaRepository<Cloth, Long> {
 
-    public List<Cloth> findBySeoson(SEASON season);
+    public List<Cloth> findBySeason(SEASON season);
 }

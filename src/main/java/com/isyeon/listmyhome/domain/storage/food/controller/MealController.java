@@ -36,9 +36,9 @@ public class MealController {
     }
 
 	//현재 재고 타입별 조회
-	@Operation(summary = "현재 재고 모두 조회", description = "식사 관련 재료 모두 출력")
+	@Operation(summary = "타입 별 현재 재고 조회", description = "타입 별 식사 재료 출력")
 	@GetMapping("/type")
-	public List<FindMealResponse> PostTest(@RequestBody MealType mealType) {
+	public List<FindMealResponse> PostTest(MealType mealType) {
 		return mealService.findAllMeal(mealType);
 	}
 
