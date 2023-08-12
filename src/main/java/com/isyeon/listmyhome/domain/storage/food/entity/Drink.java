@@ -20,7 +20,7 @@ public class Drink extends BaseTime {
     private Long id;  //PK
 
     @Column(length = 7, nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private DrinkType drinkType; //종류 (예:WATER)
 
     @Column(length = 20)

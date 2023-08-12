@@ -20,7 +20,7 @@ public class Snack extends BaseTime {
     private Long id;  //PK
 
     @Column(length = 7, nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private SnackType snackType; //종류 (예:CHIP)
 
     @Column(length = 20, nullable = false)

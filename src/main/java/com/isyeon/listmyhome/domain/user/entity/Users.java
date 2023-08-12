@@ -29,7 +29,7 @@ public class Users extends BaseTime {
     private Family family; //가족정보
 
     @Column(length = 1, nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private GENDER gender; //성별
 
     @Column(nullable = false)

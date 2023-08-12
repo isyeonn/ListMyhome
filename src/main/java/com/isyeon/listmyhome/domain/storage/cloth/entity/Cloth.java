@@ -22,7 +22,7 @@ public class Cloth extends BaseTime {
     private String name;
 
     @Column(length = 10, nullable = false)
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private SEASON season;
 
     private String color;
