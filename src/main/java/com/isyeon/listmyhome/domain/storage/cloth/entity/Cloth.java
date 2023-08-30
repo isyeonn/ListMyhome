@@ -2,7 +2,6 @@ package com.isyeon.listmyhome.domain.storage.cloth.entity;
 
 import com.isyeon.listmyhome.common.BaseTime;
 import com.isyeon.listmyhome.common.SEASON;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

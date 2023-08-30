@@ -1,5 +1,6 @@
 package com.isyeon.listmyhome.domain.user.service;
 
+import com.isyeon.listmyhome.common.UserIdNotFoundException;
 import com.isyeon.listmyhome.domain.user.dto.FindUserResponse;
 import com.isyeon.listmyhome.domain.user.entity.Users;
 import com.isyeon.listmyhome.domain.user.repository.UserRepository;
@@ -22,5 +23,16 @@ public class UserService {
     public FindUserResponse findUserById(Long id){
         Users userInfo = userRepository.getById(id);
         return modelMapper.map(userInfo, FindUserResponse.class);
+    }
+
+    /*
+    login 시 사용
+     */
+    public String findPasswordByUserId(String userId) throws UserIdNotFoundException {
+        Users userInfo = userRepository.findByUserId(userId);
+        if(userInfo == null) {
+            throw new UserIdNotFoundException(userId);
+        }
+        return userInfo.getPassword();
     }
 }

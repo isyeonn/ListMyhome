@@ -1,4 +1,4 @@
-package com.isyeon.listmyhome.infra;
+package com.isyeon.listmyhome.config;
 
 
 // Java
