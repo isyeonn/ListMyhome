@@ -18,8 +18,8 @@ public class ListmyhomeApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                //registry.addMapping("/**").allowedOrigins("http://front-server.com");
-            	registry.addMapping("/**");
+                //registry.addMapping("/**").allowedOrigins("http://front-server.com");//도메인 생기면 수정할 것 
+            	//registry.addMapping("/**").allowedOrigins("http://localhost:8081");
             }
         };
     }
