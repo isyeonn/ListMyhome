@@ -24,7 +24,7 @@ public class DrinkController {
 
     private final DrinkService drinkService;
 
-    // test
+    // test 2
     //현재 재고 모두 조회
     @GetMapping("/all")
     @ResponseBody
